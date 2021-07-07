@@ -10,6 +10,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FormsModule } from '@angular/forms';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SignUpComponent,
     TodoListComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
