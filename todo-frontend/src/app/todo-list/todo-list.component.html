@@ -1,1 +1,26 @@
-<p>todo-list works!</p>
+<!-- User Todo's -->
+<h3><i class="bi bi-person"></i>&nbsp;{{username}}, Todo's</h3>
+<table class="table table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>is Completed ?</th>
+            <th>Target Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todos">
+            <td>{{todo.id}}</td>
+            <td>{{todo.description}}</td>
+            <td>{{todo.isCompleted}}</td>
+            <td>{{todo.targetDate | date}}</td>
+            <td>
+                <button class="btn btn-outline-warning"><i class="bi bi-pencil"></i>&nbsp;Edit</button>&nbsp;
+                <button class="btn btn-outline-danger"><i class="bi bi-trash"></i>&nbsp;Delete</button>
+            </td>
+        </tr>
+    </tbody>
+    <button class="btn btn-outline-success mt-3"><i class="bi bi-plus-circle"></i>&nbsp;Add Todo</button>
+</table>
