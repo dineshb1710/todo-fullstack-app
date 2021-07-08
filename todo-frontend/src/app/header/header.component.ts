@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HardcodedAuthenticationService } from '../services/hardcoded-authentication.service';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  username = ''
+  constructor(public authenticationService: HardcodedAuthenticationService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
-    this.username = sessionStorage.getItem('username');
-  }
-
+  ngOnInit(): void { }
 }
