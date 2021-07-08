@@ -34,6 +34,6 @@ export class HardcodedAuthenticationService {
      * @returns 
      */
     isUserLoggedIn() : boolean {
-      return sessionStorage.getItem('username') === null ? true : false;
+      return sessionStorage.getItem('username') != null ? true : false;
     }
 }
