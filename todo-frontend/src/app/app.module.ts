@@ -10,8 +10,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { FormsModule } from '@angular/forms';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { FormsModule } from '@angular/forms';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     TodoListComponent,
     HomeComponent,
     NotFoundComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
